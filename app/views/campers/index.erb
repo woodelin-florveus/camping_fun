@@ -2,3 +2,8 @@
 
 <%# Display a list all of the campers %>
 
+<ul>
+    <% @campers.each do |camper|%>
+        <div><%= link_to camper.name, camper_path(camper)%></div>
+        <%end%>
+</ul>

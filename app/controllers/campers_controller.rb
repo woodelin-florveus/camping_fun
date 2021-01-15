@@ -4,4 +4,9 @@ class CampersController < ApplicationController
         @campers = Camper.all
     end
 
+    def show
+        # byebug
+        @camper = Camper.find(params[:id])
+    end
+
 end
