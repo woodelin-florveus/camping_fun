@@ -1,7 +1,9 @@
-<h2>Here are All the Campers</h2>
+<h2>All Campers</h2>
 
 <ul>
     <% @campers.each do |camper|%>
-        <div><%= link_to camper.name, camper_path(camper)%></div>
+        <li>
+        <%= link_to camper.name, camper_path(camper)%> <%=link_to "(Delete Camper)", camper_path(camper), method: "delete"%>
+        </li>
         <%end%>
 </ul>

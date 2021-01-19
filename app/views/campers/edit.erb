@@ -1,0 +1,9 @@
+<h1> Edit <%=@edit_camper.to_s%> </h1>
+
+<%= form_for @edit_camper do |f| %>
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+    <%= f.label :age, "Age:" %>
+    <%= f.text_field :age %>
+    <%= f.submit "Edit Camper"%>
+<%end%>
